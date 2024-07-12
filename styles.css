@@ -1,0 +1,146 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .language {
+    font-size: 14px;
+    color: rgb(70, 90, 105);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #ecf0f7;
+    position: absolute;
+    display: block;
+    margin-top: 14px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+}
+
+.govde {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 115px;
+    width: 100%;
+    height: 50%; 
+    text-align: center;
+}
+
+.fb_mobile_logo {
+    height: 60px;
+    width: 60px;
+}
+
+form {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 37%;
+    padding-top: 310px;
+    text-align: center;
+    font-size: 100%;
+}
+
+input {
+    font-size: 100%;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    height: 62px;
+    border: 1px #0000003b solid;
+    border-radius: 13px;
+    
+
+}
+
+.in1, .in2 {
+    margin-bottom: 10px;
+    padding-left: 4%;
+}
+
+::placeholder {   
+    color: rgba(0, 0, 0, 0.37);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  button {
+    width: 95%;
+    height: 45px;
+    background-color: rgb(0, 100, 224);
+    color: white;
+    font-size: 100%;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 15px;
+  }
+
+.pass_rec {
+    font-size:100%;
+    color: rgb(28, 43, 51);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration:none; /* Fontun altındaki çizgiyi kaldırır. */
+}
+
+footer {   
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    margin-top: 770px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .new_acc {
+    color: rgb(0, 100, 224);
+    background-color: transparent;
+    border: 1px rgb(0, 100, 224) solid; /* Solid: çerçeve hattında ince bir çizgi oluşturur. */
+
+}
+
+footer .meta_logo {
+    width: 60px;
+    height: 12px; /* 90x18 bu resmin orijinal boyutudur. */
+    opacity: 60%;
+}
+
+footer .footer_links {
+    text-align: center;
+    padding-top: 10px;
+}
+
+a:hover {
+    text-decoration:none
+}
+a:link {
+    text-decoration:none
+}
+a:visited {
+    text-decoration:none
+}
+a:active {
+    text-decoration:none
+}
+a {
+    color: rgb(99,120,138);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
