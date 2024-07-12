@@ -1,6 +1,9 @@
 * {
     margin: 0%;
     padding: 0%;
+    width: 100%;
+    overflow: hidden; /* Alanın dışına taşanları gizle */
+    white-space: nowrap; /* Alt satıra geçmeyi engelle */
 }
 
 header {
@@ -31,7 +34,7 @@ body {
 main {
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 700px;
 }
 
 .govde {
@@ -113,16 +116,19 @@ footer .new_acc {
     color: rgb(0, 100, 224);
     background-color: transparent;
     border: 1px rgb(0, 100, 224) solid; /* Solid: çerçeve hattında ince bir çizgi oluşturur. */
+    text-align: center;
 
 }
 
 footer .meta_logo {
+    position: ;
     width: 60px;
     height: 12px; /* 90x18 bu resmin orijinal boyutudur. */
     opacity: 60%;
 }
 
 footer .footer_links {
+    position: fixed;
     text-align: center;
     padding-top: 10px;
 }
