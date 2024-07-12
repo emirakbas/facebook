@@ -121,16 +121,21 @@ footer .new_acc {
 }
 
 footer .meta_logo {
-    position: ;
-    width: 60px;
-    height: 12px; /* 90x18 bu resmin orijinal boyutudur. */
+    position: absolute;
+    width: 100%;
+    height: 20%; /* 90x18 bu resmin orijinal boyutudur. */
     opacity: 60%;
+}
+
+footer .meta {
+    width: 60px;
+    height: 12px;
 }
 
 footer .footer_links {
     position: fixed;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 a:hover {
