@@ -39,7 +39,7 @@ body {
 main {
     position: absolute;
     width: 100%;
-    height: 850px;
+    height: 90vh;
 }
 
 .govde {
@@ -66,7 +66,7 @@ form {
     display: block;
     width: 100%;
     height: 80%;
-    padding-top: 34vh;
+    padding-top: 30vh;
     text-align: center;
     font-size: 100%;
 }
@@ -84,8 +84,12 @@ input {
 }
 
 .in1, .in2 {
-    margin-bottom: 10px;
+    margin-bottom: -4px;
     padding-left: 4%;
+}
+
+.in3 {
+    display: none;
 }
 
 ::placeholder {   
@@ -104,11 +108,24 @@ input {
     margin-bottom: 15px;
   }
 
+  .login_button {
+    margin-top: 20px;
+  
+  }
+
+  .marka_olustur {
+    display: none;
+  }
+
 .pass_rec {
     font-size:100%;
     color: rgb(28, 43, 51);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration:none; /* Fontun altındaki çizgiyi kaldırır. */
+}
+
+hr {
+    display: none;
 }
 
 .new_acc {
@@ -123,13 +140,11 @@ input {
 
 footer {   
     position: absolute;
-    height: 10%;
+    height: 12%;
     width: 100%;
     text-align: center;
-    margin-top: 85vh;
+    margin-top: 83vh;
 }
-
-
 
 footer .meta_logo {
     position: absolute;
@@ -151,6 +166,18 @@ footer .footer_links {
     padding-top: 6.5vh;
 }
 
+.footer_tablet_linkler {
+    display: none;
+}
+
+.footer_tablet_diller {
+    display: none;
+}
+
+.footer_hr {
+    display: none;
+
+}
 
 a:hover {
     text-decoration:none
@@ -175,83 +202,176 @@ a {
 
 
 /* ::::: TABLET ÇÖZÜNÜRLÜĞÜ ::::: */
-@media screen and (min-width: 768px) and (max-width: 9024px) { /* MAX WİDH'İ DÜZELTMEYİ UNUTMA!!!*/
+@media screen and (min-width: 768px) and (max-width: 1024px) { /* MAX WİDH'İ DÜZELTMEYİ UNUTMA!!!*/
 
-    * {
-        overflow: hidden; /* Alanın dışına taşanları gizle */
-        white-space: nowrap; /* Alt satıra geçmeyi engelle */
-    }
-    
     body {
     background-color: #ecf0f7;
     position: relative;
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     }
 
     header {
-        position: absolute;
+        position: relative;
         display: flex;
         margin: auto;
+        margin-top: 0;
         justify-content: center;
         width: 100%;
-        height: 200px;
+        height: 90px;
     }
 
-    main .fb_mobile_logo {
+    main {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;
+        margin-top: -10px;
+
+    }
+
+    .govde {
+        width: 35vh;
+        height: 10vh;
+        text-align: center;
+        font-size: 24px;
+        font-family: Helvetica, sans-serif;
+        line-height: 28px;
+    }
+
+    .fb_mobile_logo {
         display: none;
     }
 
     header .fb_tablet_logo {
-        height: 55%;
-        width: 55%;
+        position: absolute;
+        height: 110%;
+        width: 110%;
+        margin-top: 12px;
     }   
 
     header .language {
     display: none; 
     }
 
-    .slogan {
-        position: absolute;
-        display: block;
-        margin: auto;
-        text-align: center;
+    button {
+        width: 92%;
+        margin-top: 4%;
+        height: 46px;
+        background-color: rgb(0, 100, 224);
+        color: white;
         font-size: 20px;
+        font-family: helvetica;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .pass_rec {
+        font-size: 14px;
+        color: rgb(83, 83, 255);
     }
 
-    main {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 100%;
-        height: 100%;
+    hr {
+        margin-top: 20px;
+        opacity: 20%;
+        height: 1px;
+        background-color: black;
+        width: 90%;
+        border-radius: 10px;
+        border: 1px #ffffff solid;
+    }
+
+    .new_acc {
+    background-color: #42b72a;
+    width: 44%;
+    font-size: 16px;
+    }
+
+    form .marka_olustur #SayfaOlustur {
+        color: black;
+        margin-top: 3vh;
+        font-size: 14px;
+        font-family: helvetica;
+    }
+    
+    form .marka_olustur {
+        margin-top: 3vh;
+        font-size: 14px;
+        font-family: helvetica;
     }
 
     form {
+        position: absolute;
         background-color: white;
-        width: 30vh;
-        height: 30vh;
+        width: 37vh;
+        height: 32vh;
+        margin-top: 14vh;
         border-radius: 10px;
         text-align: center;
+        box-shadow: 0px 0px 10px 0px #0000003b;
     }
 
     input {
-        width: 80%;
-        height: 10%;
-        margin: 10px;
+        width: 86%;
+        height: 15%;
+        margin-top: 15px;
+        margin-bottom: -4px;
         border: 1px #0000003b solid;
-        border-radius: 13px;
+        border-radius: 10px;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    .in3 {
+        margin-top: -5px !important;
+    }
+
+    .in1 {
+        display: none;
     }
 
     footer {
+        background-color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: -10vh;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .footer_tablet_diller {
+        z-index: 1;
         position: absolute;
         margin: auto;
-        margin-top: 90vh;
-        width: 100%;
-        height: 100px;
+        padding-top: 20px;
+        width: 63vh;
+    }
+
+    .footer_tablet_linkler {
+        position: absolute;
+        padding-top: 90px;
+        margin: auto;
+        width: 63vh;
+    }
+
+    .footer_hr {
+        z-index: 2;
+        margin-top: 70px;
+        width: 62vh;
+    }
+
+    .meta_logo {
+        display: none;
+    }
+
+    .footer_links {
+        display: none;
     }
 
     a:hover {
@@ -269,9 +389,205 @@ a {
     a {
         color: rgb(99,120,138);
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 10px;
+        font-size: 12px;
+        font-family: Helvetica, sans-serif;
+        padding-left: 10px;
     }
     
     } /* MEDİA KAPANMA PARANTEZİ */
 
     /* ::::: MASAÜSTÜ ÇÖZÜNÜRLÜĞÜ ::::: */
+
+    @media screen and (min-width: 1025px) { /* MAX WİDH'İ DÜZELTMEYİ UNUTMA!!!*/
+
+        body {
+        background-color: #ecf0f7;
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        }
+    
+        header {
+            position: relative;
+            display: flex;
+            margin: auto;
+            margin-top: 0;
+            justify-content: center;
+            width: 100%;
+            height: 90px;
+        }
+    
+        main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 70vh;
+            margin-top: -10px;
+    
+        }
+    
+        .govde {
+            width: 35vh;
+            height: 10vh;
+            text-align: center;
+            font-size: 24px;
+            font-family: Helvetica, sans-serif;
+            line-height: 28px;
+        }
+    
+        .fb_mobile_logo {
+            display: none;
+        }
+    
+        header .fb_tablet_logo {
+            position: absolute;
+            height: 110%;
+            width: 110%;
+            margin-top: 12px;
+        }   
+    
+        header .language {
+        display: none; 
+        }
+    
+        button {
+            width: 92%;
+            margin-top: 4%;
+            height: 46px;
+            background-color: rgb(0, 100, 224);
+            color: white;
+            font-size: 20px;
+            font-family: helvetica;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .pass_rec {
+            font-size: 14px;
+            color: rgb(83, 83, 255);
+        }
+    
+        hr {
+            margin-top: 20px;
+            opacity: 20%;
+            height: 1px;
+            background-color: black;
+            width: 90%;
+            border-radius: 10px;
+            border: 1px #ffffff solid;
+        }
+    
+        .new_acc {
+        background-color: #42b72a;
+        width: 44%;
+        font-size: 16px;
+        }
+    
+        form .marka_olustur #SayfaOlustur {
+            color: black;
+            margin-top: 3vh;
+            font-size: 14px;
+            font-family: helvetica;
+        }
+        
+        form .marka_olustur {
+            margin-top: 3vh;
+            font-size: 14px;
+            font-family: helvetica;
+        }
+    
+        form {
+            position: absolute;
+            background-color: white;
+            width: 37vh;
+            height: 32vh;
+            margin-top: 14vh;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px #0000003b;
+        }
+    
+        input {
+            width: 86%;
+            height: 15%;
+            margin-top: 15px;
+            margin-bottom: -4px;
+            border: 1px #0000003b solid;
+            border-radius: 10px;
+            text-align: left;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+    
+        .in3 {
+            margin-top: -5px !important;
+        }
+    
+        .in1 {
+            display: none;
+        }
+    
+        footer {
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: -10vh;
+            width: 100%;
+            height: 40vh;
+        }
+    
+        .footer_tablet_diller {
+            z-index: 1;
+            position: absolute;
+            margin: auto;
+            padding-top: 20px;
+            width: 63vh;
+        }
+    
+        .footer_tablet_linkler {
+            position: absolute;
+            padding-top: 90px;
+            margin: auto;
+            width: 63vh;
+        }
+    
+        .footer_hr {
+            z-index: 2;
+            margin-top: 70px;
+            width: 62vh;
+        }
+    
+        .meta_logo {
+            display: none;
+        }
+    
+        .footer_links {
+            display: none;
+        }
+    
+        a:hover {
+            text-decoration:none
+        }
+        a:link {
+            text-decoration:none
+        }
+        a:visited {
+            text-decoration:none
+        }
+        a:active {
+            text-decoration:none
+        }
+        a {
+            color: rgb(99,120,138);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            font-family: Helvetica, sans-serif;
+            padding-left: 10px;
+        }
+        
+        } /* MEDİA KAPANMA PARANTEZİ */
