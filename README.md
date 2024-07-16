@@ -1,1 +1,1 @@
-Responsive tasarıma uygun mobil facebook giriş ekranı çalışması.
+Responsive tasarıma uygun facebook giriş ekranı çalışması.
